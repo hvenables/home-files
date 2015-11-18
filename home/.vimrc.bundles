@@ -31,6 +31,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'morhetz/gruvbox'
 Plugin 'takac/vim-hardtime'
 Plugin 'rizzatti/dash.vim'
+Plugin 'auto-pairs/auto-pairs.vim'
 " Plugin 'vim-scripts/tComment'
 
 " Auto align

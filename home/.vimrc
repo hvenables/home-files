@@ -9,9 +9,20 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+call plug#begin('~/.vim/plugged')
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-commentary'
+Plug 'jiangmiao/auto-pairs'
+
+"Added by Harry
+let g:user_emmet_leader_key=","
+
+call plug#end()
+
 "colorscheme jellybeans
 
 set backspace=2   " Backspace deletes like most programs in insert mode
+
 set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
@@ -315,7 +326,6 @@ nnoremap == gg=G``
 " Move up and down by visual line (as opposed to line break only)
 nnoremap j gj
 nnoremap k gk
-
 " New Theme <3
 colorscheme gruvbox
 
@@ -339,8 +349,8 @@ nmap <leader>T :!thyme -d<cr><cr>
 let g:NumberToggleTrigger="<leader>r"
 
 " HardTime
-let g:hardtime_default_on = 1
-let g:hardtime_timeout = 900
-let g:hardtime_showmsg = 1
-let g:hardtime_maxcount = 2
+" let g:hardtime_default_on = 1
+" let g:hardtime_timeout = 900
+" let g:hardtime_showmsg = 1
+" let g:hardtime_maxcount = 2
 
