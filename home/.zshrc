@@ -1,5 +1,7 @@
 #Path to your oh-my-zsh installation.
-
+export AWS_ACCESS_KEY_ID="AKIAINMZL45IHR6Y7YPA"
+export AWS_SECRET_ACCESS_KEY="cD7xu1s3HVskYuCf8QcN3v+rRGZw/k6mUDhPcZUX"
+export S3_BUCKET_NAME="venablesinstagram"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -122,3 +124,6 @@ bindkey -v
 #alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 #alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
+# added by travis gem
+[ -f /Users/Harry/.travis/travis.sh ] && source /Users/Harry/.travis/travis.sh
