@@ -12,8 +12,6 @@ endif
 "Added by Harry
 let g:user_emmet_leader_key=","
 
-call plug#end()
-
 "colorscheme jellybeans
 
 set backspace=2   " Backspace deletes like most programs in insert mode
