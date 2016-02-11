@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Define bundles via Github repos
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-dispatch'
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'ctrlpvim/ctrlp.vim'
