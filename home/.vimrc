@@ -9,11 +9,6 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-call plug#begin('~/.vim/plugged')
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-commentary'
-Plug 'jiangmiao/auto-pairs'
-
 "Added by Harry
 let g:user_emmet_leader_key=","
 
