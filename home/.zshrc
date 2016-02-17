@@ -1,7 +1,4 @@
 #Path to your oh-my-zsh installation.
-export AWS_ACCESS_KEY_ID="AKIAINMZL45IHR6Y7YPA"
-export AWS_SECRET_ACCESS_KEY="cD7xu1s3HVskYuCf8QcN3v+rRGZw/k6mUDhPcZUX"
-export S3_BUCKET_NAME="venablesinstagram"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -104,10 +101,12 @@ function mygr8() {
   bin/rake db:migrate RAILS_ENV=test
 }
 
-mcd() { # creates a directory and places you in it
+function mcd() { # creates a directory and places you in it
   mkdir -p $1
   cd $1
 }
+
+autoload mygr8, mcd
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
