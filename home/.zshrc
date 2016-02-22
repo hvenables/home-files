@@ -19,10 +19,6 @@ alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles NO && killa
 # SICP Racket Bullshit
 alias racket="racket -i -p neil/sicp -l xrepl"
 
-# Leo's commandments
-alias flounce='echo "I can'\''t work under these conditions" | lolcat; sleep 1; exit'
-alias hissy_fit='echo "I can'\''t work under these conditions" | lolcat; sleep 1;sudo shutdown -h now'
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -62,11 +58,12 @@ alias hissy_fit='echo "I can'\''t work under these conditions" | lolcat; sleep 1
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git osx tmux github fasd history-substring-search zsh-syntax-highlighting nyan)
 
-export ZSH=~/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
+# export ZSH=~/.oh-my-zsh
+# source $ZSH/oh-my-zsh.sh
 # User configuration
 
-export PATH=$PATH:"/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin"
+# export PATH=$PATH:"/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin"
+export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/ruby-2.2.1@global/bin:/Users/harry/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin:/Users/harry/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 
@@ -108,17 +105,17 @@ function mcd() { # creates a directory and places you in it
 
 autoload mygr8, mcd
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Config for 'z': http://jilles.me/badassify-your-terminal-and-shell/
 . `brew --prefix`/etc/profile.d/z.sh
-source /usr/local/share/zsh/site-functions
-alias s="~/chat.txt << "
+# source /usr/local/share/zsh/site-functions
+# alias s="~/chat.txt << "
 
-alias rubes="ruby -run -ehttpd . -p8000"
-alias harrygrok="ngrok -subdomain=harry 8000"
+# alias rubes="ruby -run -ehttpd . -p8000"
+# alias harrygrok="ngrok -subdomain=harry 8000"
 
-bindkey -v
+# bindkey -v
 
 #alias v='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
 #alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
