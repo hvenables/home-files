@@ -58,8 +58,8 @@ alias racket="racket -i -p neil/sicp -l xrepl"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git osx tmux github fasd history-substring-search zsh-syntax-highlighting nyan)
 
-# export ZSH=~/.oh-my-zsh
-# source $ZSH/oh-my-zsh.sh
+export ZSH=~/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH=$PATH:"/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin"
