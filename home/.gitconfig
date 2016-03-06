@@ -1,10 +1,10 @@
 [user]
-    name = Harry Venables
-    email = venablesh@yahoo.co.uk
+	name = 
+	email = harry@tagadab.com
 [push]
     default = simple
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/harry/.gitignore_global
     editor = vim
 	autocrlf = input
     ;editor = "NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim"
@@ -96,3 +96,9 @@
   prune = true
 [credential]
 	helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

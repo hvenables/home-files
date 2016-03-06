@@ -351,6 +351,11 @@ nmap <leader>T :!thyme -d<cr><cr>
 " Toggle relative line numbers
 let g:NumberToggleTrigger="<leader>r"
 
+set nocompatible
+if has("autocmd")
+  filetype indent plugin on
+endif
+
 " HardTime
 " let g:hardtime_default_on = 1
 " let g:hardtime_timeout = 900
