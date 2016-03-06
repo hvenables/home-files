@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH=$PATH:"/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin"
-export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/ruby-2.2.1@global/bin:/Users/harry/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin:/Users/harry/.rvm/bin"
+export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/ruby-2.2.1@global/bin:/Users/harry/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin:/Users/harry/.rvm/bin:/Users/harry/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 
