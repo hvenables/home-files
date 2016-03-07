@@ -38,6 +38,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'yegappan/grep'
+Plugin 'jgdavey/tslime.vim'
 
 " Plugin 'vim-scripts/tComment'
 
