@@ -4,6 +4,8 @@
 # switch default editor for pry to vim
 Pry.config.editor = "vim"
 
+Pry.config.pager = false
+
 Dir['./lib/*.rb'].each { |f| require f }
 
 # Hit Enter to repeat last command

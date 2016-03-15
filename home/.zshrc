@@ -63,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export PATH=$PATH:"/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin"
-export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/ruby-2.2.1@global/bin:/Users/harry/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin:/Users/harry/.rvm/bin:/Users/harry/bin"
+export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/ruby-2.2.1@global/bin:/Users/harry/.rvm/rubies/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/git:/usr/local/heroku/bin:/Users/Harry/.rvm/gems/ruby-2.1.1/bin:/Users/Harry/.rvm/gems/ruby-2.1.1@global/bin:/Users/Harry/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Harry/.rvm/bin:/Users/harry/.rvm/bin:/Users/harry/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 
@@ -101,6 +101,10 @@ function mygr8() {
 function mcd() { # creates a directory and places you in it
   mkdir -p $1
   cd $1
+}
+
+function ssh-copy-id() {
+  cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh; cat >> ~/.ssh/authorized_keys";
 }
 
 autoload mygr8, mcd
