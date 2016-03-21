@@ -366,6 +366,13 @@ if has("autocmd")
   filetype indent plugin on
 endif
 
+" Requires 'jq' (brew install jq)
+function! s:PrettyJSON()
+  %!jq .
+  set filetype=json
+endfunction
+command! PrettyJSON :call <sid>PrettyJSON()
+
 " HardTime
 " let g:hardtime_default_on = 1
 " let g:hardtime_timeout = 900
