@@ -68,16 +68,15 @@ Plugin 'scrooloose/nerdcommenter'
 " Tmux
 Plugin 'pivotal/tmux-config'
 
-Plugin 'danro/rename.vim'
+" Plugin 'danro/rename.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'yssl/QFEnter'
 Plugin 'elzr/vim-json'
 Plugin 'sjl/vitality.vim'
-Plugin 'Chiel92/vim-autoformat'
+" Plugin 'Chiel92/vim-autoformat'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'airblade/vim-gitgutter'
+" Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 filetype on
