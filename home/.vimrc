@@ -1,4 +1,4 @@
-" Use Vim settings, rather then Vi settings. This setting must be as early as
+ " Use Vim settings, rather then Vi settings. This setting must be as early as
 " possible, as it has side effects.
 set nocompatible
 
@@ -19,8 +19,6 @@ autocmd VimResized * :wincmd =
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
-"colorscheme jellybeans
-
 set backspace=2   " Backspace deletes like most programs in insert mode
 
 set nobackup
@@ -34,12 +32,15 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set cursorline    " highlight the current line the cursor is on
 set complete=.,w,b,u,t,i
+set ttyfast
+set lazyredraw
 
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
 
 " Numbers
+set relativenumber
 set number
 set numberwidth=5
 
@@ -51,6 +52,7 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+set re=1
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -67,6 +69,9 @@ set wildmenu
 
 set spelllang=en_gb
 
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+endif
 
 " Tab completion
 " will insert tab at beginning of line,
@@ -83,12 +88,8 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
+set background=dark
+colorscheme distinguished
 
 filetype plugin indent on
 
@@ -154,6 +155,10 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_show_hidden = 1
+
+" Changes the way tabs work in vim
+let g:airline#extensions#tabline#enabled = 1
+
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -337,11 +342,6 @@ nnoremap == gg=G``
 " Move up and down by visual line (as opposed to line break only)
 nnoremap j gj
 nnoremap k gk
-" New Theme <3
-colorscheme gruvbox
-
-" Setting dark mode
-set background=dark
 
 " Supercharges '%' to work on do-end, def-end, class-end, module-end etc.
 runtime macros/matchit.vim
@@ -358,9 +358,6 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " Pomodoro Thyme
 nmap <leader>T :!thyme -d<cr><cr>
 
-" Toggle relative line numbers
-let g:NumberToggleTrigger="<leader>r"
-
 set nocompatible
 if has("autocmd")
   filetype indent plugin on
@@ -372,9 +369,3 @@ function! s:PrettyJSON()
   set filetype=json
 endfunction
 command! PrettyJSON :call <sid>PrettyJSON()
-
-" HardTime
-" let g:hardtime_default_on = 1
-" let g:hardtime_timeout = 900
-" let g:hardtime_showmsg = 1
-" let g:hardtime_maxcount = 2
