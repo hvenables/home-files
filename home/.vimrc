@@ -53,6 +53,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 set re=1
+set clipboard=unnamed
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -88,8 +89,12 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+let g:solarized_termcolors=256
 set background=dark
-colorscheme distinguished
+colorscheme solarized
+
+let g:airline_theme='solarized'
+let g:airline#extensions#tabline#enabled = 1
 
 filetype plugin indent on
 
@@ -156,10 +161,6 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_show_hidden = 1
 
-" Changes the way tabs work in vim
-let g:airline#extensions#tabline#enabled = 1
-
-
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
@@ -213,9 +214,6 @@ nmap <leader>te :tabedit
 nmap <F1> <Esc>
 map! <F1> <Esc>
 
-" <leader>F to begin searching with ag
-map <leader>F :Ag<space>
-
 " search next/previous -- center in page
 nmap n nzz
 nmap N Nzz
@@ -258,15 +256,15 @@ nnoremap <leader>l :bnext<CR>
 nnoremap <leader><space> :noh<cr>
 
 " Paste mode in and out
-"nnoremap <leader>p :set paste<CR>
-"nnoremap <leader>np :set nopaste<CR>
+nnoremap <leader>p :set paste<CR>
+nnoremap <leader>np :set nopaste<CR>
 
 " Create split, close split
 nnoremap <leader>w <C-w>v<C-w>1
 nnoremap <leader>q <C-w>q
 
 " Nerdtree
-map <C-n> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 
 " JJ escape
 inoremap jj <ESC>:wa<CR>
@@ -302,6 +300,8 @@ map <Leader>a :call RunAllSpecs()<CR>
 " let g:rspec_command = 'call Send_to_Tmux("spring rspec {spec}\n")'
 let g:rspec_command = "Dispatch bin/rspec {spec}"
 
+let g:rspec_runner = "os_x_iterm2"
+
 " Cucumber mapping
 map <Leader>c :w<cr>:!cucumber<cr>
 
@@ -325,9 +325,16 @@ nmap s <Plug>(easymotion-s2)
 " Indentation
 nnoremap <Leader>i m^gg=G`^
 
-" =========================================
-" Added by Roi
-" =========================================
+" Multi Line Select
+let g:multi_cursor_use_default_mapping=0
+
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+
+let g:multi_cursor_start_key='<C-n>'
+let g:multi_cursor_start_word_key='g<C-n>'
 
 " Strip Whitespace
 nnoremap <leader>ws :StripWhitespace<CR>
