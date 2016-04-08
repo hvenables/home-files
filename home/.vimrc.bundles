@@ -40,6 +40,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'airblade/vim-gitgutter'
 
 " Nice status bar
 Plugin 'bling/vim-airline'
