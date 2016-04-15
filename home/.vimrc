@@ -155,7 +155,15 @@ nnoremap \ :Ag<SPACE>
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 
 " configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 let g:ctrlp_extensions = ['tag']
@@ -263,6 +271,27 @@ nnoremap <leader>np :set nopaste<CR>
 nnoremap <leader>w <C-w>v<C-w>1
 nnoremap <leader>q <C-w>q
 
+" Create a new tab
+nnoremap <leader>y :tabnew<CR>
+
+"vim fugitive maping
+nnoremap <leader>ga :Git add %:p<CR><CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gc :Gcommit -v -q<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gm :Gmove<Space>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>go :Git checkout<Space>
+
+"Vim Rails key mapping
+nnoremap <leader>mo :Vmodel<CR>
+nnoremap <leader>co :Vcontroller<CR>
+nnoremap <leader>vi :Vview<CR>
+nnoremap <leader>un :Vunittest<CR>
+nnoremap <leader>fu :Vfunctionaltest<CR>
+nnoremap <leader>fe :Vintegrationtest
+nnoremap <leader>ja :Vjavascript<CR>
+
 " Nerdtree
 map <C-t> :NERDTreeToggle<CR>
 
@@ -361,9 +390,6 @@ set pastetoggle=<leader>p
 nnoremap <Leader>H :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 
 au BufNewFile,BufRead *.ejs set filetype=html
-
-" Pomodoro Thyme
-nmap <leader>T :!thyme -d<cr><cr>
 
 set nocompatible
 if has("autocmd")
