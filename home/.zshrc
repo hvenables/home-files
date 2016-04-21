@@ -130,3 +130,5 @@ source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 # added by travis gem
 [ -f /Users/Harry/.travis/travis.sh ] && source /Users/Harry/.travis/travis.sh
 export PATH="/usr/local/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
