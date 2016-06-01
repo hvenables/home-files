@@ -15,6 +15,7 @@ let g:user_emmet_leader_key=","
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 " zoom a vim pane, <C-w>= to re-balance
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
