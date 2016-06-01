@@ -11,6 +11,7 @@ ZSH_THEME="af-magic"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rake="noglob rake"
+alias vim=nvim
 
 # Mac Helpers
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
