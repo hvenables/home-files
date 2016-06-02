@@ -41,6 +41,7 @@ Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'juvenn/mustache.vim'
 
 " Nice status bar
 Plugin 'bling/vim-airline'
