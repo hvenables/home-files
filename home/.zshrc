@@ -58,7 +58,7 @@ alias racket="racket -i -p neil/sicp -l xrepl"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx tmux github fasd history-substring-search zsh-syntax-highlighting nyan)
+plugins=(git osx tmux github fasd history-substring-search zsh-syntax-highlighting nyan zsh-autosuggestions)
 
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
