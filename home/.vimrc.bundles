@@ -60,8 +60,5 @@ Plugin 'elzr/vim-json'
 Plugin 'sjl/vitality.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 
-" Testing Agrep
-Plugin 'ramele/agrep'
-
 call vundle#end()
 filetype on
