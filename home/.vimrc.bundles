@@ -60,5 +60,7 @@ Plugin 'elzr/vim-json'
 Plugin 'sjl/vitality.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 
+Plugin 'AndrewRadev/sideways.vim'
+
 call vundle#end()
 filetype on
