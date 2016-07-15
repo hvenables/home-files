@@ -72,7 +72,7 @@ export PATH=$PATH:"/Users/harry/.rvm/gems/ruby-2.2.1/bin:/Users/harry/.rvm/gems/
 
 export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu' -c 'nnoremap i <nop>' -"
 
-export EDITOR="/usr/bin/vim"
+export EDITOR=nvim
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

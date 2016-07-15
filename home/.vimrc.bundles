@@ -51,6 +51,9 @@ Plugin 'roman/golden-ratio'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
+" Coffeescript
+Plugin 'kchmck/vim-coffee-script'
+
 " Tmux
 Plugin 'pivotal/tmux-config'
 
@@ -59,6 +62,8 @@ Plugin 'yssl/QFEnter'
 Plugin 'elzr/vim-json'
 Plugin 'sjl/vitality.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+
+Plugin 'AndrewRadev/sideways.vim'
 
 call vundle#end()
 filetype on
