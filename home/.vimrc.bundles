@@ -51,6 +51,9 @@ Plugin 'roman/golden-ratio'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
+" Coffeescript
+Plugin 'kchmck/vim-coffee-script'
+
 " Tmux
 Plugin 'pivotal/tmux-config'
 
