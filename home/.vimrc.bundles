@@ -54,6 +54,9 @@ Plugin 'scrooloose/nerdcommenter'
 " Tmux
 Plugin 'pivotal/tmux-config'
 
+" Elixir
+Plugin "elixir-lang/vim-elixir"
+
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'yssl/QFEnter'
 Plugin 'elzr/vim-json'
