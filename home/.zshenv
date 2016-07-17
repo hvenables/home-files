@@ -1,5 +1,0 @@
-export S3_BUCKET_NAME='wrecclesham'
-export AWS_ACCESS_KEY_ID='AKIAJ7E3YO4EFIMBUKXQ'
-export AWS_SECRET_ACCESS_KEY='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'
-export AWS_REGION='us-east-1'
-export YOUTUBE='AIzaSyAiXJGMNq3owuOACHs9csRONbqKuT-jY7o'
