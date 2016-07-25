@@ -51,6 +51,8 @@ Plugin 'roman/golden-ratio'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Tmux
 Plugin 'pivotal/tmux-config'
 
