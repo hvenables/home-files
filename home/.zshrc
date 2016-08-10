@@ -61,6 +61,8 @@ alias racket="racket -i -p neil/sicp -l xrepl"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git osx tmux github fasd history-substring-search zsh-syntax-highlighting nyan zsh-autosuggestions)
 
+setopt correct
+
 export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 # User configuration
@@ -96,7 +98,8 @@ alias hup='cdh && sh ~/.homesick/repos/home-files/commit.sh && source ~/.zshrc &
 #############
 # FUNCTIONS
 #############
-
+transfer() { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
+tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; } 
 
 function mygr8() {
   bin/rake db:migrate
