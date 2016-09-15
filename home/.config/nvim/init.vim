@@ -197,6 +197,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" veritcal line config
+let g:indentLine_color_term = 239
+let g:indentLine_char = '|'
+
 " set listchars+=space:·
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
