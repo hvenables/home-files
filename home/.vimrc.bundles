@@ -47,6 +47,9 @@ Plugin 'juvenn/mustache.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Vertical lines
+Plugin 'Yggdroot/indentLine'
+
 Plugin 'roman/golden-ratio'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'

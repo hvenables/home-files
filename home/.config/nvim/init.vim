@@ -239,6 +239,10 @@ let NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
+
+autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let expect scenario
+highlight def link rubyRspec Function
+
 "" Shortcuts!!
 
 " Index ctags from any project, including those outside Rails
