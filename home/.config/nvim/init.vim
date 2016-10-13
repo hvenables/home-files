@@ -234,7 +234,7 @@ let NERDTreeHighlightCursorline = 1
 let NERDTreeShowHidden = 1
 " map enter to activating a node
 let NERDTreeMapActivateNode='<CR>'
-let NERDTreeIgnore=['\.git','\.DS_Store','\.pdf', '.beam']
+let NERDTreeIgnore=['\.DS_Store','\.pdf', '.beam']
 
 " Allow NERDTREE to have relative number
 let NERDTreeShowLineNumbers=1
