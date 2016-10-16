@@ -65,7 +65,7 @@ set smarttab
 " When scrolling off-screen do so 3 lines at a time, not 1
 set scrolloff=3
 
-set guifont=Monoid\ Nerd\ Font\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
+set guifont=Droid\ Mono\ Sans\ for\ Powerline\ Nerd\ CtrlP\ Types:h12
 set encoding=utf8
 let g:airline_powerline_fonts=1
 
@@ -192,10 +192,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" veritcal line config
+let g:indentLine_color_term = 239
+let g:indentLine_char = '|'
 
 " set listchars+=space:·
 
@@ -232,12 +234,16 @@ let NERDTreeHighlightCursorline = 1
 let NERDTreeShowHidden = 1
 " map enter to activating a node
 let NERDTreeMapActivateNode='<CR>'
-let NERDTreeIgnore=['\.git','\.DS_Store','\.pdf', '.beam']
+let NERDTreeIgnore=['\.DS_Store','\.pdf', '.beam']
 
 " Allow NERDTREE to have relative number
 let NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
+
+
+autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_should_behave_like before after setup subject its shared_examples_for shared_context let expect scenario
+highlight def link rubyRspec Function
 
 "" Shortcuts!!
 
