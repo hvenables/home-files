@@ -69,14 +69,6 @@ set guifont=Monoid\ Nerd\ Font\ for\ Powerline\ Plus\ Nerd\ File\ Types\ 11
 set encoding=utf8
 let g:airline_powerline_fonts=1
 
-
-let g:NERDTreeDisableFileExtensionHighlight = 1
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExtensionHighlightColor = {} "this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['css'] = '00FF00' "sets the color of .css files to green
-let g:NERDTreeExtensionHighlightColor = {} "this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['css'] = '' "assigning it to an empty string will skip highlight
-
 " Enable tab complete for commands.
 " first tab shows all matches. next tab starts cycling through the matches
 set wildmenu
