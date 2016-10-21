@@ -13,6 +13,7 @@ ZSH_THEME="af-magic"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias rake="noglob rake"
 alias vim=nvim
+alias rspec=bin/rspec
 alias becpd="bundle exec cap production deploy"
 
 # Mac Helpers
