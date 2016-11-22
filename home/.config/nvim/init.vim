@@ -94,9 +94,9 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-" let g:solarized_termcolors=256
-" set background=dark
-" colorscheme solarized
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
