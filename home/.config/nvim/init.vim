@@ -251,7 +251,8 @@ highlight def link rubyRspec Function
 map <Leader>ct :!ctags -r .<CR>
 
 " Run commands that require an interactive shell
-nnoremap <Leader>r :RunInInteractiveShell<space>
+nnoremap <Leader>ru :RunInInteractiveShell<space>
+map <leader>r :!ruby %<cr>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
